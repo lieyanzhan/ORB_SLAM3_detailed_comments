@@ -1,0 +1,16 @@
+//(compiler build settings)
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "monotum",
+            "command": "./build.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+        
+    ],
+    "version": "2.0.0"
+}

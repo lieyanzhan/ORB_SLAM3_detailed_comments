@@ -1,0 +1,35 @@
+// (debugger settings)
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ORB-SLAM3",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/liuchaoqun/Documents/ORB_SLAM3-master/Examples/Monocular/mono_tum",
+            "args": [
+                "/home/liuchaoqun/Documents/ORB_SLAM3-master/Vocabulary/ORBvoc.txt",
+                "/home/liuchaoqun/Documents/ORB_SLAM3-master/Examples/Monocular/TUM3.yaml",
+                "/home/liuchaoqun/Documents/ORB_SLAM3-master/dataSet/rgbd_dataset_freiburg1_xyz",
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "monotum",
+            "miDebuggerPath": "/usr/local/bin/gdb"
+        }
+    ]
+}
